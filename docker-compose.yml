@@ -1,0 +1,8 @@
+version: '2.0'
+
+services:
+  bot:
+    image: docker.pkg.github.com/kikexd/cubasorteosbot/image:latest
+    volumes:
+      - ./data:/app/data
+    command: --db-path data/db.sqlite3
